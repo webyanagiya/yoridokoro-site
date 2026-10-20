@@ -79,6 +79,11 @@ nav a:hover { border-color: var(--gold); }
 .btn:hover { opacity: .85; }
 .btn.outline { background: transparent; color: var(--gold); }
 .btn.outline:hover { background: rgba(200, 167, 104, .12); opacity: 1; }
+.btn.insta { display: inline-flex; align-items: center; gap: 8px; background: var(--wine); color: #fff; border-color: var(--gold); }
+.btn.insta:hover { background: #6a2f43; opacity: 1; }
+.ig-icon { flex: none; display: block; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: stretch; gap: 10px; margin-top: 16px; }
+.hero-actions .btn { margin: 0; }
 .two { display: grid; grid-template-columns: 1fr 1fr; gap: 7%; align-items: center; max-width: 1120px; margin: auto; }
 .two p { max-width: 480px; }
 
@@ -130,7 +135,7 @@ nav a:hover { border-color: var(--gold); }
 .intro { background: var(--cream); }
 .intro-inner { display: grid; grid-template-columns: 360px 1fr; gap: 7%; max-width: 1040px; margin: auto; align-items: start; }
 .intro-mama { position: sticky; top: calc(var(--header-h) + 32px); text-align: center; }
-.intro-mama img { aspect-ratio: 4 / 5; object-position: center 35%; border: 1px solid #d8c4a0; padding: 8px; background: #fff; box-shadow: 0 22px 44px -26px rgba(41, 21, 30, .5); }
+.intro-mama img { aspect-ratio: 4 / 5; object-position: 52% 40%; border: 1px solid #d8c4a0; padding: 8px; background: #fff; box-shadow: 0 22px 44px -26px rgba(41, 21, 30, .5); }
 .intro-mama figcaption { margin-top: 16px; font: 24px 'Noto Serif JP', serif; letter-spacing: .12em; }
 .intro-mama figcaption .eyebrow { display: block; font-size: 11px; }
 .intro-mama em { font-style: normal; color: var(--wine); }
@@ -181,6 +186,9 @@ nav a:hover { border-color: var(--gold); }
 footer { text-align: center; background: var(--deep); color: #eee; padding: 55px 20px 60px; }
 footer > p:not(.logo) { font-size: 13px; }
 footer address { font-style: normal; font-size: 13px; color: #cdbfc4; margin: 14px 0; }
+.footer-insta { display: flex; width: fit-content; align-items: center; gap: 10px; min-height: 48px; padding: 6px 20px 6px 6px; margin: 4px auto 18px; border: 1px solid rgba(200, 167, 104, .55); border-radius: 999px; color: var(--gold); font-size: 15px; letter-spacing: .04em; transition: background .2s; }
+.footer-insta:hover { background: rgba(200, 167, 104, .1); }
+.ig-circle { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 50%; background: var(--wine); color: #fff; border: 1px solid var(--gold); }
 footer > small { font-size: 11px; color: #ac9ca3; }
 
 /* ---------- mobile quick bar ---------- */
@@ -206,6 +214,7 @@ footer > small { font-size: 11px; color: #ac9ca3; }
   .hero h1 { font-size: clamp(24px, 7.4vw, 32px); letter-spacing: .06em; }
   .hero h1 small { font-size: 13px; }
   .hero .btn { padding: 12px 20px; }
+  .hero-actions .btn.insta { flex: 1 1 100%; justify-content: center; min-height: 48px; }
 
   .section { padding: 70px 6%; }
   .heading { margin-bottom: 38px; }
