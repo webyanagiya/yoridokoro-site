@@ -89,7 +89,7 @@ nav a:hover { border-color: var(--gold); }
 
 /* ---------- hero ---------- */
 .hero { position: relative; height: min(720px, calc(100svh - var(--header-h))); min-height: 540px; color: #fff; overflow: hidden; }
-.hero > img { position: absolute; inset: 0; height: 100%; }
+.hero > img { position: absolute; inset: 0; height: 100%; object-position: center 30%; }
 .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(27, 16, 23, .93), rgba(27, 16, 23, .66) 55%, rgba(27, 16, 23, .12)); }
 .hero-text { position: relative; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 40px 8%; max-width: 860px; }
 .hero h1 { font-size: clamp(32px, 4.2vw, 58px); line-height: 1.35; letter-spacing: .1em; white-space: nowrap; margin: 16px 0 10px; }
@@ -128,6 +128,9 @@ nav a:hover { border-color: var(--gold); }
 .bottle-grid h4 { border-bottom: 1px solid #dbc8aa; padding-bottom: 8px; margin: 18px 0 6px; }
 .bottle-grid p { display: flex; justify-content: space-between; gap: 8px; font-size: 14px; margin: 0; padding: 7px 0; border-bottom: 1px dotted #e6dccc; }
 .bottle-grid b { white-space: nowrap; color: var(--wine); font-weight: 500; }
+.free-soft { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px 16px; margin: 14px 0 0; padding: 12px 16px; background: #fbf6ec; border: 1px solid #e6d3ae; font-size: 14px; }
+.free-soft small { font-size: 12.5px; color: var(--muted); }
+.free-soft b { color: var(--wine); white-space: nowrap; border: 1px solid var(--gold); border-radius: 999px; padding: 2px 14px; background: #fff; font-size: 13.5px; }
 .menu-link { display: inline-block; margin-top: 22px; color: #8a6032; text-decoration: underline; text-underline-offset: 3px; font-size: 13px; }
 
 
@@ -207,7 +210,7 @@ footer > small { font-size: 11px; color: #ac9ca3; }
   .call { padding: 6px 12px; font-size: 13px; }
 
   .hero { height: auto; min-height: min(calc(100svh - var(--header-h) - 60px), 700px); }
-  .hero > img { object-position: 40% center; }
+  .hero > img { object-position: 38% center; }
   .shade { background: linear-gradient(180deg, rgba(27, 16, 23, .55), rgba(27, 16, 23, .85) 60%, rgba(27, 16, 23, .95)); }
   .hero-text { padding: 70px 7% 60px; }
   .hero-lead { font-size: 14px; }
